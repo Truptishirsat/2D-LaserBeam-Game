@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Shooter2 : MonoBehaviour
 {
-     public float speed = 5f;
+     public float speed;
     private float current_rotation_angle = 0f;
-    private float lefttarget_rotation_angle = -70f;
-    private float righttarget_rotation_angle = 70f;
+    private float lefttarget_rotation_angle = -50f;
+    private float righttarget_rotation_angle = 50f;
 
 
     void Update()
