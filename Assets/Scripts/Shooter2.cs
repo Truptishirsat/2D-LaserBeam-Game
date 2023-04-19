@@ -12,7 +12,7 @@ public class Shooter2 : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.D))
+        if(Input.GetKey(KeyCode.D))
         {
             if((current_rotation_angle <= righttarget_rotation_angle))
             {
