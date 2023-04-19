@@ -17,8 +17,9 @@ public class Enemy : MonoBehaviour
     IEnumerator SpawnEnemy()
     {   while(true)
         {
-            var wanted = Random.Range(minBound, maxBound);
-            var position = new Vector3(wanted, transform.position.y);
+            var x = Random.Range(minBound, maxBound);
+           // var y = Random.Range(minBound, maxBound);
+            var position = new Vector3(x,transform.position.y);
             GameObject gameObject = Instantiate(enemyPrefab, position, Quaternion.identity);
             yield return new WaitForSeconds(secondSpawn);
             Destroy(gameObject, 5f);

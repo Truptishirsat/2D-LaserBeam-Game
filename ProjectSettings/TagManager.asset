@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Barrier
   - Enemy2
+  - Power
+  - Power2
   layers:
   - Default
   - TransparentFX
