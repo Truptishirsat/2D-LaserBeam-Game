@@ -18,7 +18,6 @@ public class Enemy : MonoBehaviour
     {   while(true)
         {
             var x = Random.Range(minBound, maxBound);
-           // var y = Random.Range(minBound, maxBound);
             var position = new Vector3(x,transform.position.y);
             GameObject gameObject = Instantiate(enemyPrefab, position, Quaternion.identity);
             yield return new WaitForSeconds(secondSpawn);

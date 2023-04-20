@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
-public class Laser : MonoBehaviour
+public class SingleLaser : MonoBehaviour
 {
-
-    public int scoreA = 0;
+    private int scoreA = 0;
     private LineRenderer laser;
-    public Barrier barrier;
+    public Barrier1 barrier1;
     [SerializeField] TextMeshProUGUI scoreAText;
 
 
@@ -34,8 +34,8 @@ public class Laser : MonoBehaviour
             }
             else if(hit.collider.name == "Power(Clone)")
             {
-                barrier.missedByA = 0;
-                barrier.missiedAText.text = "MissedByA: " + barrier.missedByA;
+                barrier1.missedByA = 0;
+                barrier1.missiedAText.text = "MissedByA: " + barrier1.missedByA;
 
                 Destroy(GameObject.FindGameObjectWithTag("Power"));
             }
@@ -49,7 +49,7 @@ public class Laser : MonoBehaviour
         {
             laser.enabled = false;
         }
- 
-   }
 
+        
+   }
 }
